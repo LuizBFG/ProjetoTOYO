@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Obrigado pela preferencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Por favor insira o endereço para entrega:</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+     <ion-item>
+      <ion-input placeholder="Rua"></ion-input>
+     </ion-item>
+     <ion-item>
+      <ion-input placeholder="Numero" type="password"></ion-input>
+     </ion-item>
+     <ion-item>
+      <ion-input placeholder="Complemento(Apartamento, detalhes)"></ion-input>
+     </ion-item>
+     <ion-item>
+      <ion-input placeholder="Cep"></ion-input>
+     </ion-item>
+     <ion-item>
+      <ion-input placeholder="Telefone"></ion-input>
+     </ion-item>
+     <ion-item>
+      <ion-button (click)="checkout()" >Finalizar Pedido</ion-button>
+      <ion-button (click)= "LogIn()">Continuar Comprando</ion-button>
+    </ion-item>
+    </ion-card-content>
+  </ion-card>
+ 
+  
+</ion-content>
