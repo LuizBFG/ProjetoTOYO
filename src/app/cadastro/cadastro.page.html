@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>TOYO Medical</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle></ion-card-subtitle>
+      <ion-card-title>Cadastrar</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Nome</ion-label>
+        <ion-input type="text" [(ngModel)]="Usuario.Nome"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Sobrenome</ion-label>
+        <ion-input type="text" [(ngModel)]="Usuario.sobrenome"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">E-mail</ion-label>
+        <ion-input type="text" [(ngModel)]="Usuario.email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Senha</ion-label>
+        <ion-input type="password" [(ngModel)]="Usuario.senha"></ion-input>
+      </ion-item>
+
+      <ion-button (click)="LogIn()" (click)= "onClick()" expand="block">
+        Confirmar
+      </ion-button>
+
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>
